@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 30px 15px;
+        }
+        .logo {
+            max-width: 50px; /* Size of the logo */
+            margin-bottom: 20px;
+        }
+        .iphone-image {
+            max-width: 400px; /* Size of the iPhone image */
+            width: 100%; /* Responsive width */
+            margin: 20px 0;
+        }
+        h1 {
+            color: #E74C3C;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #E74C3C;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #C0392B;
+        }
+        .processing {
+            display: none;
+            margin-top: 20px;
+        }
+        .warning {
+            color: #C0392B;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="aveom39yy (1).png" alt="Company Logo" class="logo">
+    <h1>Congratulations!</h1>
+    <p>You have been selected to win a brand new iPhone 15 Pro Max!</p>
+    <img src="tatiana-steve-LunVPm34ly4-unsplash.jpg" alt="iPhone 15 Pro Max" class="iphone-image">
+    <p class="warning">Hurry! Offer expires in 10 minutes.</p>
+    <a class="btn" id="claimButton">Click Here to Avail</a>
+    <div class="processing" id="processingDiv">
+        <img src="https://media.giphy.com/media/sSgvbe1m3n93G/giphy.gif" alt="Processing...">
+        <p>Processing your claim...</p>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        <p>This promotion is only available to selected users.</p>
+    </div>
+
+    <script>
+        document.getElementById('claimButton').addEventListener('click', function() {
+            this.style.display = 'none';
+            document.getElementById('processingDiv').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
